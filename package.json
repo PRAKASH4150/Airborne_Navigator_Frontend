@@ -1,0 +1,14 @@
+{
+  "name": "airborne_navigator",
+  "version": "1.0.0",
+  "description": "This Project displays all the filights departing from an airport with their details. ",
+  "main": "index.js",
+  "scripts": {
+    "jsonbackend": "npx json-server --watch -p 4035 db.json"
+  },
+  "author": "Sai Surya Prakash Moka",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
