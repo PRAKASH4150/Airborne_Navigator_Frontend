@@ -25,7 +25,7 @@
       {
         const resp=await fetch("http://localhost:5000/api");
         const data =await resp.json();
-        return data["flights"];
+        return data;
       }
     },
     async created()
