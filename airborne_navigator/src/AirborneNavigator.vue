@@ -23,7 +23,7 @@
     {
       async fetchFlightDetails()
       {
-        const resp=await fetch("http://localhost:5000/api");
+        const resp=await fetch("https://airborne-navigator-backend.onrender.com/api");
         const data =await resp.json();
         return data;
       }

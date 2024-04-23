@@ -1,8 +1,8 @@
 <template>
     <div id="indvflightdetails">
         <div id="airlinename">
-            <img :src="flight.URL" class="airline-logo">
-            <p>{{ flight.airlineName }}</p>
+            <img id="logo" :src="flight.URL" class="airline-logo">
+            <p id="content">{{ flight.airlineName }}</p>
         </div>
         <div id="otherdetails">
             <div id="tripdetails">
@@ -86,7 +86,7 @@ export default
     margin-bottom: 20px;
 }
 
-#airlinename p {
+#airlinename #content {
     font-size: 22px;
     font-weight: bold;
 }
@@ -153,7 +153,7 @@ export default
 }
 
 #statusdetails #gateno {
-    font-size: 22px;
+    font-size: 20px;
     padding-bottom: 10px;
 }
 
@@ -168,15 +168,15 @@ export default
 }
 
 .delayed-button {
-    background-color: #DC3545;
+    background-color: #D70E0E;
 }
 
 .boarding-button {
-    background-color: #17A2B8;
+    background-color: #0EBDD7;
 }
 
 .ontime-button {
-    background-color: #28A745;
+    background-color: #1B9445;
 }
 
 .departed-button {
@@ -204,7 +204,7 @@ export default
         display: block;
     }
 
-    #airlinename img {
+    #airlinename #logo {
 
         width: 20%;
     }
