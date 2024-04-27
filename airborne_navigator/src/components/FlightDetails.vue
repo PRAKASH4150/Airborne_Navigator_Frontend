@@ -8,7 +8,7 @@
             <div id="tripdetails">
                 <div id="sourcedetails">
                     <p id="etd">
-                        <i class="fa-solid fa-plane-departure"></i>
+                        <img class="plane-logo" src="../assets/68380.png">
                         &nbsp;{{ flight.etd }}
                     </p>
                     <p id="source">{{ flight.source }}</p>
@@ -21,7 +21,7 @@
                 </div>
                 <div id="destinationdetails">
                     <p id="eta">
-                        <i class="fa-solid fa-plane-arrival"></i>
+                        <img class="plane-logo" src="../assets/68542.png">
                         &nbsp;
                         {{ flight.eta }}
                     </p>
@@ -31,7 +31,7 @@
             </div>
             <div id="aircraftdetails">
                 <p id="flightnum"><strong>Flight No: </strong>{{ flight.flightNo }}</p>
-                <p><i class="fas fa-plane"></i>&nbsp;{{ flight.aircraftType }}</p>
+                <p><img id="aircraft-logo" src="../assets/airplane-logo.png">&nbsp;{{ flight.aircraftType }}</p>
             </div>
             <div id="statusdetails">
                 <p id="gateno"><strong>Gate No: </strong>{{ flight.gateNo }}</p>
@@ -98,6 +98,16 @@ export default
 .airline-logo {
     width: 5%;
     height: 3%;
+}
+.plane-logo
+{
+    width:25%;
+    height:25%;
+}
+#aircraft-logo
+{
+    width:7%;
+    height:7%;
 }
 
 #otherdetails {
